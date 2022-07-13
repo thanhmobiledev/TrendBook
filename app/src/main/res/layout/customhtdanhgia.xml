@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+
+    android:background="@drawable/shadow_new">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/uss"
+            android:layout_height="20dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tennguoidang"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginRight="150dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="#0422C9"
+            android:layout_width="match_parent"
+            android:text="User"
+            android:layout_height="50dp">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/diem"
+            android:text="20/11/1997"
+            android:layout_marginStart="-150dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingRight="0dp"
+            android:src="@drawable/star"
+            android:layout_gravity="bottom|center"
+            android:textSize="18sp"
+            android:textColor="@color/backgroundDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtnoidung"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:text="Nội dung"
+        android:textColor="#071E9E"
+        android:fontFamily="@font/montserrat_medium"
+
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="20dp"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/imHinhDang"
+            android:src="@drawable/addimage"
+            android:layout_width="400dp"
+            android:layout_height="400dp">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="3"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnlike"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/heart"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txt_like"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=""
+                android:textColor="@color/blue"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btncmt"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/coment"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/txtcmt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=""
+                android:textColor="@color/blue"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnshare"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/share"
+                android:layout_height="30dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

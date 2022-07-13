@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Func.MyActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <ViewFlipper
+        android:id="@+id/qc"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </ViewFlipper>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gv_hot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="190dp"
+            android:layout_weight="0.64"
+            android:background="@drawable/shadow_new"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:verticalSpacing="5dp" />
+
+        <ListView
+            android:id="@+id/lvBanAn"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shadow_new"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.38"
+            android:horizontalSpacing="5dp"
+            android:numColumns="1"
+            android:verticalSpacing="5dp" />
+       <LinearLayout
+           android:id="@+id/llfb"
+           android:paddingLeft="15dp"
+           android:background="@drawable/bak"
+           android:paddingRight="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           >
+           <LinearLayout
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="50dp"
+                   android:padding="10dp"
+                   android:src="@drawable/uss"
+                   android:layout_height="match_parent">
+
+               </de.hdodenhof.circleimageview.CircleImageView>
+
+               <TextView
+                   android:layout_width="342dp"
+                   android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="2dp"
+                   android:layout_weight="6"
+                   android:background="@drawable/duong_vien11"
+                   android:fontFamily="@font/montserrat_medium"
+                   android:gravity="center|left"
+                   android:text="Bạn đang nghĩ gì?"
+                   android:textColor="@color/blue"
+                   android:textSize="12dp"
+                   android:textStyle="bold|italic" />
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bak"
+            android:weightSum="10"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/uss"
+                    android:layout_height="match_parent">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <EditText
+                    android:id="@+id/motachitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="6"
+                    android:hint="Bạn đang nghĩ gì?"
+                    style="@style/CardView.Light"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColorHint="#3F51B5"
+                    android:textStyle="bold|italic" />
+
+                <Button
+
+                    android:id="@+id/btndanhcmngia"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="59dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_menu_send"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/lvBanAn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:textColor="#ff0099"
+                android:background="@drawable/menu_duoi"
+                android:textColorHint="#ff0099">
+                <ImageView
+                    android:id="@+id/imHinhDG"
+                    android:padding="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bak"
+                    android:src="@drawable/addimage">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="8"
+                        android:background="@drawable/bak2"
+                        android:gravity="center"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="25dp"
+                            android:src="@android:drawable/star_off"
+                            android:layout_height="25dp">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="30dp"
+                            android:src="@android:drawable/star_off"
+                            android:layout_height="30dp">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="35dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@android:drawable/star_off"
+                            android:layout_height="35dp">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/star4"
+                            android:layout_width="38dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@android:drawable/star_off"
+                            android:layout_height="38dp">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/star5"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@android:drawable/star_off"
+                            android:layout_height="40dp">
+                        </ImageView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

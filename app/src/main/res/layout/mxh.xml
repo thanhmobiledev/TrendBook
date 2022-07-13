@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/uss"
+                android:layout_height="match_parent">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <EditText
+                android:id="@+id/motachitiet"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="6"
+                android:hint="Review/chia sẻ trải nghiệm của bạn về một quán ăn, địa điểm du lịch"
+                style="@style/CardView.Light"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/blue"
+                android:textSize="12dp"
+                android:layout_marginLeft="2dp"
+                android:textColorHint="#3F51B5"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imHinhDG"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/addimage">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_below="@+id/lvBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:textColor="#ff0099"
+        android:textColorHint="#ff0099">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="25dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="25dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="30dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="35dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="38dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="38dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="40dp">
+                </ImageView>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/btndanhcmngia"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/login_en_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="ĐĂNG BÀI"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+
+
+
+</LinearLayout>
