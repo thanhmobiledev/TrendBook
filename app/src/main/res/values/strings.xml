@@ -52,8 +52,9 @@
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="ad_unit_idx">/6499/example/banner</string>
-    <string name="ad_unit_idzzzzzzz">ca-app-pub-1692564421396252/7714990253</string>
-    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id">ca-app-pub-1692564421396252/7714990253</string>
+    <string name="ad_unit_idzzz">ca-app-pub-3940256099942544/6300978111</string>
+
 
 
 </resources>

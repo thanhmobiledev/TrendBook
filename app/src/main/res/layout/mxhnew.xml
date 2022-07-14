@@ -29,7 +29,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_marginTop="190dp"
-            android:layout_weight="0.64"
+            android:layout_weight="0.74"
             android:background="@drawable/shadow_new"
             android:gravity="center"
             android:horizontalSpacing="5dp"
